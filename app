@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 st.title("Nassau Candy Distributor - Shipping Analysis")
 
-df = pd.read_csv(r'C:\Users\pc\Downloads\Nassau Candy Distributor.csv')
+df = pd.read_csv('Nassau Candy Distributor.csv')
 
 df['Order Date'] = pd.to_datetime(df['Order Date'], format='mixed')
 df['Ship Date'] = pd.to_datetime(df['Ship Date'], format='mixed')
